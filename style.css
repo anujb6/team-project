@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(250, 250, 250);
+}
+
+/*----------- text ---------------*/
+
+
+.text{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 7%;
+}
+.text h1{
+   
+    margin-left:40%;
+    font-family: 'PT Serif', serif;
+    padding-left: 3%;
+}
+.text .p {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 5%;
+    flex: 50%;
+}
+.text p{
+    padding-right: 40%;
+}
+
+/*-------------------------------*/
+
+/*---------- images ---------------*/
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align:left;
+}
+
+.images{
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 2%;
+}
+.images img{
+    position:relative;
+    width: 30%;
+}
+
+.images h4{
+    padding: 2%;
+    font-size: 10px;
+    font-family: 'PT Serif', serif;
+    font-weight:100;
+}
+.images h3{
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+footer{
+    text-align: center;
+    padding: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(94, 90, 90);
+}
+.odds{
+    transform: scale(1.1, 1.1);
+    margin-top: 10%;
+}
+
+/*----------- Responsive -------*/
+@media only screen and (max-width: 375px){
+    .text h3{
+        position: absolute;
+        width: 278px;
+        height: 57px;
+        left: 12px;
+        top: 131px;
+    }
+    .text h1{   
+        position: absolute;
+        width: 278px;
+        height: 47px;
+        right: 23%;
+        top: 48px;
+    }
+    .text p{
+        position: absolute;
+        width: 333px;
+        height: 87px;
+        left: 12px;
+        top: 173px; 
+        padding: 0%;
+    }
+    footer{
+        position: absolute;
+        width: 226px;
+        height: 18.31px;
+        left: 75px;
+        top: 99.5%;
+    }
+    .images {
+        position: absolute;
+        top: 50%;
+    }
+    .images h4{
+        font-size: 6px;
+    }
+    .images h3{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 473px){
+    .text h3{
+        position: absolute;
+        width: 278px;
+        height: 57px;
+        left: 12px;
+        top: 131px;
+    }
+    .text h1{   
+        position: absolute;
+        width: 278px;
+        height: 47px;
+        right: 31%;
+        top: 58px;
+    }
+    .text p{
+        position: absolute;
+        width: 333px;
+        height: 87px;
+        left: 12px;
+        top: 173px; 
+        padding: 0%;
+    }
+    footer{
+        position: absolute;
+        width: 226px;
+        height: 18.31px;
+        left: 75px;
+        top: 99.5%;
+    }
+    .images {
+        position: absolute;
+        top: 50%;
+    }
+    .images h4{
+        font-size: 6px;
+    }
+    .images h3{
+        font-size: 12px;
+    }
+}
